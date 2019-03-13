@@ -1,28 +1,32 @@
 package bicycles;
 
-public class BikeRide {
-//    Bicycle bicycle = new Bicycle();
-//    BikeRide bikeRide = new BikeRide(bicycle);
-//    bikeRide.ride();
-//
-//System.out.println(bikeRide.currentSpeed());
-}
+import bicycle.Bicycle;
 
-//    public void ride() {
-//        this.bicycle.accelerate();
-//        this.bicycle.accelerate();
-//        this.bicycle.accelerate();
-//        this.bicycle.brake();
-//        this.bicycle.brake();
-//        this.bicycle.accelerate();
-//    }
-//    /**
-//     * Constructor for objects of class Bicycle
-//     */
-//    public Bicycle()
+public class BikeRide extends Bicycle {
+    private final Bicycle bicycle;
+
+
+        public BikeRide(Bicycle bicycle){
+            this.bicycle=bicycle;
+
+        }
+
+//System.out.println(bikeRide.currentSpeed());
+
+    public void ride() {
+        this.bicycle.accelerate();
+        this.bicycle.accelerate();
+        this.bicycle.accelerate();
+        this.bicycle.brake();
+        this.bicycle.brake();
+        this.bicycle.accelerate();
+    }
+
+//    public Bicycle(int Startaccelerate, int Startbrake, int StartSpeed)
 //    {
-//        this.bicycle.accelerate();
-//        this.bicycle.brake();
 //
+//        accelerate = Startaccelerate;
+//        brake = Startbrake;
+//        speed = StartSpeed;
 //    }
-//}
+}

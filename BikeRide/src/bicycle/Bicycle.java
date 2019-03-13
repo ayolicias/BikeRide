@@ -3,8 +3,6 @@ package bicycle;
 public class Bicycle {
     private int speed;
 
-//    private int currentSpeed;
-
     public void accelerate(){
         speed +=5;
     }

@@ -1,31 +1,36 @@
 package bicycles;
 
 import bicycle.Bicycle;
+import bicycle.BikeRide;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BicycleTest {
     @Test
-    public void shouldAccellerate() {
-    Bicycle bicycle = new Bicycle();
-    BikeRide bikeRide = new BikeRide(bicycle);
-    bikeRide.ride();
-    assertEquals(bicycle.currentSpeed(), 19);
+    public void currentspeed() {
+        Bicycle bicycle = new Bicycle();
+        BikeRide bikeRide = new BikeRide(bicycle);
+        bikeRide.ride();
+        assertEquals(bicycle.currentSpeed(), 14);
     }
 
     @Test
-    public void shouldBrake(){
-        Bicycle bicycle = new Bicyle();
+    public void accelarate() {
+        Bicycle bicycle = new Bicycle();
         BikeRide bikeRide = new BikeRide(bicycle);
         bikeRide.ride();
-        assertEquals(bicycle.brake(), 0);
+        assertEquals(bicycle.currentSpeed(), 19);
     }
-//
-//    private void assertEquals(void brake, int i) {
-//    }
+}
 
 
+
+//private void assertEquals(void brake) {
+
+
+//private void assertEquals(void brake, int i) {
+//}
 //@Test
 //public void currentSpeed(){
 //assertEquals(2,2);
@@ -36,4 +41,7 @@ public class BicycleTest {
 //assertEquals(2,2);
 //
 //}
-}
+//*/
+//
+//
+//}

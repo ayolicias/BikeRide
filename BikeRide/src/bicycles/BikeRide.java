@@ -1,17 +1,13 @@
-package bicycle;
+package bicycles;
+
+public class BikeRide {
 
 
-public abstract class BikeRide extends bicycle {
-    private final bicycle bicycle;
+    private final bicycles.Bicycle bicycle;
 
-
-        public BikeRide(bicycle bicycle){
-            this.bicycle=bicycle;
-
-        }
-
-//System.out.println(bikeRide.currentSpeed());
-
+    public BikeRide(Bicycle bicycle) {
+        this.bicycle = bicycle;
+    }
     public void ride() {
         this.bicycle.accelerate();
         this.bicycle.accelerate();
@@ -21,5 +17,9 @@ public abstract class BikeRide extends bicycle {
         this.bicycle.accelerate();
     }
 
+    public int getcurrent(){
+        return this.bicycle.currentSpeed();}
 
 }
+
+

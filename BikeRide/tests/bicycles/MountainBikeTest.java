@@ -17,4 +17,13 @@ public class MountainBikeTest {
         assertEquals(bikeRide.getcurrent(), 14);
     }
 
+    @Test
+    public void returnAccelerate(){
+        MountainBike mountainBike = new MountainBike();
+        BikeRide bikeRide = new BikeRide(mountainBike);
+        bikeRide.ride();
+        assertEquals(bikeRide.getcurrent(), 14);
+    }
+
+
 }

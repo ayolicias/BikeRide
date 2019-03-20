@@ -3,9 +3,8 @@ package bicycles.models;
 import bicycles.*;
 
 
-public class MountainBike implements Bicycle {
+public class MountainBike extends BicycleBase {
 
-    private int speed;
 
     @Override
     public void accelerate() {
@@ -26,6 +25,11 @@ public class MountainBike implements Bicycle {
     @Override
     public void stop( ) {
         this.speed=0;
+    }
+
+    @Override
+    protected int changeSpeed( ) {
+        return changeSpeed;
     }
 
 }

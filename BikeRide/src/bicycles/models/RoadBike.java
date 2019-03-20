@@ -2,9 +2,16 @@ package bicycles.models;
 
 import bicycles.*;
 
-public class RoadBike implements Bicycle {
+public  class RoadBike extends BicycleBase {
 
-    private int speed;
+    public RoadBike( ) { }
+
+
+    @Override
+    protected int changeSpeed( ) {
+        return changeSpeed;
+    }
+
 
     @Override
     public void accelerate() {
@@ -16,14 +23,5 @@ public class RoadBike implements Bicycle {
         this.speed -=4;
     }
 
-    @Override
-    public int currentSpeed() {
-        return this.speed;
-    }
-
-    @Override
-    public void stop( ) {
-        this.speed=0;
-    }
 
 }

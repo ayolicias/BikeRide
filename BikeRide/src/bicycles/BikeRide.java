@@ -8,7 +8,8 @@ public class BikeRide {
     public BikeRide(Bicycle bicycle) {
         this.bicycle = bicycle;
     }
-    public void ride() {
+
+    public  void ride( ) {
         this.bicycle.accelerate();
         this.bicycle.accelerate();
         this.bicycle.accelerate();
@@ -18,7 +19,13 @@ public class BikeRide {
     }
 
     public int getcurrent(){
-        return this.bicycle.currentSpeed();}
+        return this.bicycle.currentSpeed();
+    }
+
+//    public int accelarate(){
+//        return this.bicycle.accelarate();
+//    }
+
 
 }
 

@@ -26,10 +26,10 @@ public class MountainBike extends BicycleBase {
     public void stop( ) {
         this.speed=0;
     }
-
-    @Override
-    protected int changeSpeed( ) {
-        return changeSpeed;
-    }
+//
+//    @Override
+//    protected int changeSpeed( ) {
+//        return changeSpeed;
+//    }
 
 }

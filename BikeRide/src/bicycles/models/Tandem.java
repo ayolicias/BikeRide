@@ -4,20 +4,22 @@ import bicycles.BicycleBase;
 
 
 public class Tandem extends BicycleBase {
-    public Tandem( ) { }
-
-    @Override
-    public void accelerate() {
-        speed +=12;
+    public Tandem( ) {
     }
 
     @Override
-    public void brake() {
-        this.speed -=7;
+    public void accelerate( ) {
+        speed += 12;
     }
 
     @Override
-    protected int changeSpeed( ) {
-        return changeSpeed;
+    public void brake( ) {
+        this.speed -= 7;
     }
 }
+//
+//    @Override
+//    protected int changeSpeed( ) {
+//        return changeSpeed;
+//    }
+//}

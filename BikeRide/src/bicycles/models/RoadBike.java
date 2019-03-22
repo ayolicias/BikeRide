@@ -6,11 +6,11 @@ public  class RoadBike extends BicycleBase {
 
     public RoadBike( ) { }
 
-
-    @Override
-    protected int changeSpeed( ) {
-        return changeSpeed;
-    }
+//
+//    @Override
+//    protected int changeSpeed( ) {
+//        return changeSpeed;
+//    }
 
 
     @Override
@@ -24,14 +24,14 @@ public  class RoadBike extends BicycleBase {
     }
 
 //    @Override
-    public void ride( ) {
-        this.ride();
-    }
+//    public void ride( ) {
+//        this.ride();
+//    }
 
 //    @Override
-    public int getcurrent( ) {
-        return getcurrent();
-    }
+//    public int getcurrent( ) {
+//        return getcurrent();
+//    }
 
 
 }

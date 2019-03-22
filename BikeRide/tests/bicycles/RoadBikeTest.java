@@ -41,6 +41,9 @@ public class RoadBikeTest {
         bikeRideThree.ride();
         assertEquals(bikeRideThree.getcurrent(), 65);
     }
+
+
+
 }
 
 

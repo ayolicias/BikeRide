@@ -1,5 +1,8 @@
 package bicycles;
 
+import bicycles.models.BikeRideFour;
+import bicycles.models.BikeRideThree;
+import bicycles.models.BikeRideTwo;
 import bicycles.models.Tandem;
 import org.junit.jupiter.api.Test;
 
@@ -7,11 +10,41 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TandemTest {
     @Test
-    public void ShouldAccelerate(){
+    public void ShouldAccelerate( ) {
         Tandem tandem = new Tandem();
-        BikeRide bikeRide = new BikeRide(tandem);
-        bikeRide.ride();
-        assertEquals(bikeRide.getcurrent(), 34);
+        BikeRideOne bikeRideOne = new BikeRideOne(tandem);
+        bikeRideOne.ride();
+        assertEquals(bikeRideOne.getcurrent(), 34);
     }
 
+    @Test
+    public void ShouldAccelerateMore( ) {
+        Tandem tandem = new Tandem();
+        BikeRideTwo bikeRideTwo = new BikeRideTwo(tandem);
+        bikeRideTwo.ride();
+        assertEquals(bikeRideTwo.getcurrent(), 65);
+    }
+
+
+    @Test
+    public void ShouldBrakeMore(){
+        Tandem tandem = new Tandem();
+        BikeRideThree bikeRideThree = new BikeRideThree(tandem);
+        bikeRideThree.ride();
+        assertEquals(bikeRideThree.getcurrent(), 63);
+    }
+
+    @Test
+    public void ShouldBrakeLess(){
+        Tandem tandem = new Tandem();
+        BikeRideFour bikeRideFour = new BikeRideFour(tandem);
+        bikeRideFour.ride();
+        assertEquals(bikeRideFour.getcurrent(), 44);
+    }
 }
+
+
+
+
+
+

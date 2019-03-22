@@ -1,5 +1,8 @@
 package bicycles;
 
+import bicycles.models.BikeRideFour;
+import bicycles.models.BikeRideThree;
+import bicycles.models.BikeRideTwo;
 import bicycles.models.MountainBike;
 import org.junit.jupiter.api.Test;
 
@@ -10,20 +13,35 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class MountainBikeTest {
 
     @Test
-    public void ShouldBeAbleToAccelerate(){
+    public void ShouldAccelerate( ) {
         MountainBike mountainBike = new MountainBike();
-        BikeRide bikeRide = new BikeRide(mountainBike);
-        bikeRide.ride();
-        assertEquals(bikeRide.getcurrent(), 14);
+        BikeRideOne bikeRideOne = new BikeRideOne(mountainBike);
+        bikeRideOne .ride();
+        assertEquals(bikeRideOne.getcurrent(), 14);
+    }
+
+
+    @Test
+    public void ShouldAbleToAccelerateMore( ) {
+        MountainBike mountainBike = new MountainBike();
+        BikeRideTwo bikeRideTwo = new BikeRideTwo(mountainBike);
+        bikeRideTwo.ride();
+        assertEquals(bikeRideTwo.getcurrent(), 27);
     }
 
     @Test
-    public void returnAccelerate(){
+    public void ShouldBrakeLess( ) {
         MountainBike mountainBike = new MountainBike();
-        BikeRide bikeRide = new BikeRide(mountainBike);
-        bikeRide.ride();
-        assertEquals(bikeRide.getcurrent(), 14);
+        BikeRideThree bikeRideThree = new BikeRideThree(mountainBike);
+        bikeRideThree.ride();
+        assertEquals(bikeRideThree.getcurrent(), 26);
     }
 
-
+    @Test
+    public void ShouldBrakeMore( ) {
+        MountainBike mountainBike = new MountainBike();
+        BikeRideFour bikeRideFour = new BikeRideFour(mountainBike);
+        bikeRideFour.ride();
+        assertEquals(bikeRideFour.getcurrent(), 13);
+    }
 }

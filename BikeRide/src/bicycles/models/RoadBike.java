@@ -23,5 +23,15 @@ public  class RoadBike extends BicycleBase {
         this.speed -=4;
     }
 
+//    @Override
+    public void ride( ) {
+        this.ride();
+    }
+
+//    @Override
+    public int getcurrent( ) {
+        return getcurrent();
+    }
+
 
 }

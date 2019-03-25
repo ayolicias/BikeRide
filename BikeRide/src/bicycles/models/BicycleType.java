@@ -4,5 +4,4 @@ public enum BicycleType {
     MountainBike,
     RoadBike,
     Tandem
-
 }

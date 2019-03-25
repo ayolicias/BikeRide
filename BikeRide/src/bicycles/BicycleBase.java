@@ -1,10 +1,13 @@
 package bicycles;
 
+import bicycles.models.BicycleType;
+
 public abstract class  BicycleBase implements Bicycle {
 //    private final int BicycleBase;
 //    protected BicycleBase bicycles;
     public int speed;
- //   protected int changeSpeed;
+
+    //   protected int changeSpeed;
 //    private int BicycleBase;
 
    // public void BicycleBase(BicycleBase bicycles) {
@@ -34,6 +37,11 @@ public abstract class  BicycleBase implements Bicycle {
     public void stop()
     {
         this.speed =0;
+    }
+
+    @Override
+    public BicycleType getBicycleType( ) {
+       return this.getBicycleType();
     }
 
 //    protected abstract int changeSpeed( );

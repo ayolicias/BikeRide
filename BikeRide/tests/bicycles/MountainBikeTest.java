@@ -8,12 +8,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
-
 public class MountainBikeTest {
 
     @Test
-    public void ShouldAccelerate( ) {
+    public void ShouldAccelerateLess( ) {
         MountainBike mountainBike = new MountainBike();
         BikeRideOne bikeRideOne = new BikeRideOne(mountainBike);
         bikeRideOne .ride();
@@ -30,7 +28,7 @@ public class MountainBikeTest {
     }
 
     @Test
-    public void ShouldBrakeLess( ) {
+    public void ShouldBrakeMore( ) {
         MountainBike mountainBike = new MountainBike();
         BikeRideThree bikeRideThree = new BikeRideThree(mountainBike);
         bikeRideThree.ride();
@@ -38,7 +36,7 @@ public class MountainBikeTest {
     }
 
     @Test
-    public void ShouldBrakeMore( ) {
+    public void ShouldBrakeLess( ) {
         MountainBike mountainBike = new MountainBike();
         BikeRideFour bikeRideFour = new BikeRideFour(mountainBike);
         bikeRideFour.ride();

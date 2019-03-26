@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class RoadBikeTest {
 
     @Test
-    public void ShouldBeAbleToAccelerate( ) {
+    public void ShouldBeAbleToAccelerateLess( ) {
             RoadBike roadBike = new RoadBike();
             BikeRideOne bikeRideOne = new BikeRideOne(roadBike);
             bikeRideOne.ride();
@@ -27,7 +27,7 @@ public class RoadBikeTest {
     }
 
     @Test
-    public void ShouldBrakeLess( ) {
+    public void ShouldBrake( ) {
         RoadBike roadBike = new RoadBike();
         BikeRideThree bikeRideThree = new BikeRideThree(roadBike);
         bikeRideThree.ride();

@@ -16,6 +16,11 @@ public class Tandem extends BicycleBase {
     public void brake( ) {
         this.speed -= 7;
     }
+
+    @Override
+    public BicycleType getBicycleType( ) {
+        return null;
+    }
 }
 //
 //    @Override

@@ -21,7 +21,7 @@ public class MountainSpecTest {
     @Test
     public void ShouldAbleToAccelerateMore(){
 
-        BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, 3, BicycleType. Tandem);
+        BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, 3, BicycleType. MountainBike);
         Bicycle mountainBike = new BicycleFromSpec(mountainBikeSpec);
         BikeRideThree bikeRideThree = new BikeRideThree(mountainBike);
         bikeRideThree.ride();

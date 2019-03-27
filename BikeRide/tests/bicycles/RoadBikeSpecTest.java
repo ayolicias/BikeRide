@@ -12,7 +12,7 @@ public class RoadBikeSpecTest {
     @Test
     public void ShouldAccelerateSpecLess(){
 
-        BicycleSpecification RoadBikeSpec = new BicycleSpecification(11, 4, BicycleType.MountainBike);
+        BicycleSpecification RoadBikeSpec = new BicycleSpecification(11, 4, BicycleType.RoadBike);
         Bicycle RoadBike = new BicycleFromSpec(RoadBikeSpec);
         BikeRideOne bikeRideOne = new BikeRideOne(RoadBike);
         bikeRideOne.ride();
@@ -20,7 +20,7 @@ public class RoadBikeSpecTest {
     }
     @Test
     public void ShouldAccelerateMore(){
-    BicycleSpecification RoadBikeSpec = new BicycleSpecification(11, 4, BicycleType.MountainBike);
+    BicycleSpecification RoadBikeSpec = new BicycleSpecification(11, 4, BicycleType.RoadBike);
     Bicycle RoadBike = new BicycleFromSpec(RoadBikeSpec);
     BikeRideTwo bikeRideTwo = new BikeRideTwo(RoadBike);
     bikeRideTwo.ride();

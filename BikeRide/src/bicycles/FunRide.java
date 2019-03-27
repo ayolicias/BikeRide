@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FunRide {
-    private int funBikes;
+//    int counter;
+
     public static int maximum;
 
 
@@ -15,27 +16,28 @@ public class FunRide {
         FunRide.maximum = maximum;
     }
 
-    private List< Bicycle > bikes = new ArrayList< Bicycle >();
+    private  List< Bicycle > bikes = new ArrayList< Bicycle >();
 
-    public void accept( Bicycle bicycle ) {
+    public  void accept( Bicycle bicycle ) {
 
-        if (maximum < bikes.size()) {
+        if (maximum > bikes.size()) {
             bikes.add(bicycle);
-
-        } else if (maximum >= bikes.size()) {
+            System.out.println("bike accepted");
+        } else if (maximum <= bikes.size()) {
             System.out.println("maximum is reached");
         }
     }
 
-    public int getCountForType( BicycleType bicycleType ) {
+    public  int getCountForType( BicycleType bicycleType ) {
 //        return getCountForType;
+        int funCounter = 0;
 
         for (Bicycle i : bikes) {
             if (i.getBicycleType() == bicycleType) {
-                funBikes++;
+                funCounter++;
             }
         }
-        return funBikes;
+        return funCounter;
     }
 }
 

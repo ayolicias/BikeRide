@@ -19,4 +19,10 @@ public class BicycleFromSpec extends BicycleBase {
     public void brake( ) {
 
     }
+
+    @Override
+    public BicycleType getBicycleType( ) {
+       // System.out.println(this.bicycleSpecification.getBicycleType());
+        return this.getBicycleType(this.bicycleSpecification.getBicycleType());
+    }
 }

@@ -15,7 +15,7 @@ public class BicycleSpecification {
             this.accelerationSpeed = accelerationSpeed;
             // initialize brakeSpeed private variable
             this.brakeSpeed = brakeSpeed;
-//            this.bicycleType = bicycleType;
+            this.bicycleType = bicycleType;
 
         }
 

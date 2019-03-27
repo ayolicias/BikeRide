@@ -31,10 +31,6 @@ public class MountainBike extends BicycleBase {
     public BicycleType getBicycleType( ) {
         return null;
     }
-//
-//    @Override
-//    protected int changeSpeed( ) {
-//        return changeSpeed;
-//    }
+
 
 }

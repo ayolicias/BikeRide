@@ -1,13 +1,13 @@
-package bicycles.models;
+package bicycles.ride;
 
 import bicycles.Bicycle;
 import bicycles.BikeRide;
 
-public class BikeRideThree implements BikeRide {
+public class BikeRideTwo implements BikeRide {
+
     private final bicycles.Bicycle bicycle;
 
-    public BikeRideThree(Bicycle bicycle)
-    {
+    public BikeRideTwo(Bicycle bicycle) {
         this.bicycle = bicycle;
     }
 
@@ -16,9 +16,6 @@ public class BikeRideThree implements BikeRide {
         this.bicycle.accelerate();
         this.bicycle.accelerate();
         this.bicycle.brake();
-        this.bicycle.brake();
-        this.bicycle.brake();
-        this.bicycle.accelerate();
         this.bicycle.accelerate();
         this.bicycle.accelerate();
         this.bicycle.accelerate();

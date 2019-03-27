@@ -1,8 +1,9 @@
 package bicycles;
 
-import bicycles.models.BikeRideFour;
-import bicycles.models.BikeRideThree;
-import bicycles.models.BikeRideTwo;
+import bicycles.ride.BikeRideFour;
+import bicycles.ride.BikeRideOne;
+import bicycles.ride.BikeRideThree;
+import bicycles.ride.BikeRideTwo;
 import bicycles.models.Tandem;
 import org.junit.jupiter.api.Test;
 
@@ -39,7 +40,7 @@ public class TandemTest {
         Tandem tandem = new Tandem();
         BikeRideFour bikeRideFour = new BikeRideFour(tandem);
         bikeRideFour.ride();
-        assertEquals(bikeRideFour.getcurrent(), 44);
+        assertEquals(bikeRideFour.getcurrent(), 32);
     }
 }
 

@@ -1,7 +1,8 @@
 package bicycles;
 
-import bicycles.models.BikeRideThree;
-import bicycles.models.BikeRideTwo;
+import bicycles.ride.BikeRideOne;
+import bicycles.ride.BikeRideThree;
+import bicycles.ride.BikeRideTwo;
 import bicycles.models.RoadBike;
 import org.junit.jupiter.api.Test;
 

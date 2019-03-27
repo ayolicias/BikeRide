@@ -1,7 +1,5 @@
 package bicycles;
 
-import bicycles.models.BicycleType;
-
 public abstract class  BicycleBase implements Bicycle {
 
     public int speed;
@@ -11,10 +9,7 @@ public abstract class  BicycleBase implements Bicycle {
         this.speed += speed;
     }
 
-    //    protected BicycleBase( ) {
-//        this.speed = speed;
-//
-//    }
+
     public int currentSpeed( ) {
         return this.speed;
     }

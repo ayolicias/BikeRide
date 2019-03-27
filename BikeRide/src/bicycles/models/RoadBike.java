@@ -6,11 +6,7 @@ public  class RoadBike extends BicycleBase {
 
     public RoadBike( ) { }
 
-//
-//    @Override
-//    protected int changeSpeed( ) {
-//        return changeSpeed;
-//    }
+
 
     @Override
     public void accelerate() {
@@ -27,15 +23,7 @@ public  class RoadBike extends BicycleBase {
         return null;
     }
 
-//    @Override
-//    public void ride( ) {
-//        this.ride();
-//    }
 
-//    @Override
-//    public int getcurrent( ) {
-//        return getcurrent();
-//    }
 
 
 }

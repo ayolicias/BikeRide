@@ -11,57 +11,47 @@ public class FunRideTest{
 
 
     @Test
-    public void ShouldCountMountainType() {
+    public void ShouldCountBikeType() {
 
         BicycleSpecification mountFromSpec = new BicycleSpecification(5, 3, BicycleType.MountainBike);
         Bicycle mountainBike = new BicycleFromSpec(mountFromSpec);
 
-        FunRide fun = new FunRide(3);
+        BicycleSpecification roadFromSpec = new BicycleSpecification(11, 4, BicycleType.RoadBike);
+        Bicycle RoadBike = new BicycleFromSpec(roadFromSpec);
+
+
+        FunRide fun = new FunRide(5);
 
         fun.accept(mountainBike);
         fun.accept(mountainBike);
-        fun.accept(mountainBike);
+        fun.accept(RoadBike);
 
 
-        assertEquals(fun.getCountForType(BicycleType.MountainBike),3);
+
+        assertEquals(fun.getCountForType(BicycleType.RoadBike),1);
 
 }
 
     @Test
-    public void ShouldCountRoadType(){
-        BicycleSpecification RoadBikeSpec = new BicycleSpecification(11, 4, BicycleType.RoadBike);
-        Bicycle mountainBike = new BicycleFromSpec(RoadBikeSpec);
 
-
-
-        FunRide fun = new FunRide(2);
-
-        fun.accept(mountainBike);
-        fun.accept(mountainBike);
-
-
-        assertEquals(fun.getCountForType(BicycleType.RoadBike),2);
-
-    }
-
-    @Test
-
-    public void ShouldCountTandemType(){
+    public void acceptTest(){
 
         BicycleSpecification TandemSpec = new BicycleSpecification(12, 7, BicycleType.Tandem);
         Bicycle tandemBike = new BicycleFromSpec(TandemSpec);
+        BicycleSpecification RoadSpec = new BicycleSpecification(12, 7, BicycleType.Tandem);
+        Bicycle roadBike = new BicycleFromSpec(RoadSpec);
 
-        FunRide fun = new FunRide(4);
+        FunRide fun = new FunRide(2);
 
         fun.accept(tandemBike);
-        fun.accept(tandemBike);
-        fun.accept(tandemBike);
-        fun.accept(tandemBike);
+        fun.accept(roadBike);
 
 
-        assertEquals(fun.getCountForType(BicycleType.Tandem),4);
+        assertEquals(fun.accept(tandemBike),"reject");
 
     }
+
+
 
 }
 

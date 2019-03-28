@@ -19,14 +19,13 @@ public class FunRide {
 
     private  List< Bicycle > bikes = new ArrayList< Bicycle >();
 
-    public  void accept( Bicycle bicycle ) {
+    public  String accept( Bicycle bicycle ) {
 
         if (maximum > bikes.size()) {
             bikes.add(bicycle);
-            System.out.println("bike accepted");
-        } else if (maximum <= bikes.size()) {
-            System.out.println("maximum is reached");
+            return "accept";
         }
+        return "reject";
     }
 
     public  int getCountForType( BicycleType bicycleType ) {
@@ -39,6 +38,10 @@ public class FunRide {
             }
         }
         return funCounter;
+    }
+
+    public int getEnteredCount(){
+        return bikes.size();
     }
 }
 

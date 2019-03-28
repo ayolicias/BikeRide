@@ -29,7 +29,7 @@ public class BicycleTypeTest {
         Bicycle bicycle = new BicycleFromSpec(mountainBikeSpec);
         BikeRideOne bikeRideOne = new BikeRideOne(bicycle);
         bikeRideOne.ride();
-        assertEquals(bikeRideOne.getcurrent(), 44);
+        assertEquals(bikeRideOne.getcurrent(), 20);
 
     }
     @Test

@@ -2,54 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9fa3acd-d96f-4952-b8e3-8ac2e1da2717" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BikeRide.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/META-INF/BikeRide.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/Bicycle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/BicycleBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/BicycleType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/BikeRide.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/models/MountainBike.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/models/RoadBike.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/models/Tandem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/ride/BikeRideFour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/ride/BikeRideOne.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/ride/BikeRideThree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/ride/BikeRideTwo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/ride/FunRide.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/specification/BicycleFromSpec.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BikeRide/bicycles/specification/BicycleSpecification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/BikeRide/META-INF/BikeRide.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/BikeRide/bicycles/BicycleTypeTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/BikeRide/bicycles/FunRideTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/BikeRide/bicycles/MountainBikeTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/BikeRide/bicycles/MountainSpecTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/BikeRide/bicycles/RoadBikeSpecTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/BikeRide/bicycles/RoadBikeTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/BikeRide/bicycles/TandemTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/Bicycle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/BicycleBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/BicycleType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/models/MountainBike.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/models/RoadBike.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/models/Tandem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/ride/BikeRide.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/ride/BikeRideFour.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/ride/BikeRideOne.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/ride/BikeRideThree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/ride/BikeRideTwo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/ride/FunRide.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/specification/BicycleFromSpec.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/specification/BicycleSpecification.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/bicycles/BicycleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/bicycles/BicycleTypeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/bicycles/FunRideTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/bicycles/MountainBikeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/bicycles/MountainSpecTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/bicycles/RoadBikeSpecTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/bicycles/RoadBikeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/bicycles/TandemTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,7 +16,17 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="4" selection-start-column="4" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -76,7 +40,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -128,6 +92,7 @@
         <option value="$PROJECT_DIR$/tests/bicycles/BicycleTypeTest.java" />
         <option value="$PROJECT_DIR$/src/bicycles/ride/BikeRide.java" />
         <option value="$PROJECT_DIR$/src/bicycles/BikeRide.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -149,8 +114,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BikeRide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BikeRide" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -159,7 +134,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553777886779" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553778674887" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/tests/bicycles" />
@@ -298,9 +273,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TandemTest_ShouldAccelerateMore - 2019.03.27 at 15h 19m 43s.xml">
-      <configuration name="TandemTest.ShouldAccelerateMore" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TandemTest - 2019.03.27 at 15h 20m 02s.xml">
       <configuration name="TandemTest" configurationId="JUnit" />
     </history-entry>
@@ -328,6 +300,9 @@
     <history-entry file="All_in_BikeRide - 2019.03.28 at 14h 50m 24s.xml">
       <configuration name="All in BikeRide" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_BikeRide - 2019.03.28 at 15h 09m 52s.xml">
+      <configuration name="All in BikeRide" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -339,9 +314,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="725" extended-state="6" />
+    <frame x="-1" y="-11" width="1368" height="733" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20151515" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20454545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -351,7 +327,7 @@
       <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.32943144" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.13879599" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.73913044" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.23076923" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.2792642" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -616,6 +592,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>

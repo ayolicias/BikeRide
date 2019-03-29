@@ -10,40 +10,51 @@ public class FunRide {
 //    int counter;
 
     public static int maximum;
+    private int BicycleType;
 
 
     public FunRide( int maximum ) {
 
-        FunRide.maximum = maximum;
     }
 
-    private  List< Bicycle > bikes = new ArrayList< Bicycle >();
+    private List< Bicycle > bikes = new ArrayList< Bicycle >();
 
-    public  String accept( Bicycle bicycle ) {
+    public void accept( Bicycle bicycle ) {
 
-        if (maximum > bikes.size()) {
+
+        if (!bikes.contains(bicycle) && maximum > bikes.size()) {
             bikes.add(bicycle);
-            return "accept";
+
+            System.out.println("accept");
+//            return "accept";
+
+        } else if (maximum <= bikes.size()) {
+            System.out.println("reject");
         }
-        return "reject";
+//        return "reject";
+
     }
 
-    public  int getCountForType( BicycleType bicycleType ) {
-//        return getCountForType;
-        int funCounter = 0;
 
-        for (Bicycle i : bikes) {
-            if (i.getBicycleType() == bicycleType) {
-                funCounter++;
+    public int getCountForType( BicycleType bicycleType ) {
+        int funCount = 0;
+        for (Bicycle type : bikes) {
+            if (type.getBicycleType() == bicycleType) {
+                funCount++;
             }
         }
-        return funCounter;
+        return funCount;
     }
+
+
 
     public int getEnteredCount(){
         return bikes.size();
     }
 }
+
+
+
 
 
 

@@ -1,9 +1,8 @@
-package models;
+package bicycles.models;
 
 import bicycles.ride.BikeRideOne;
 import bicycles.ride.BikeRideThree;
 import bicycles.ride.BikeRideTwo;
-import bicycles.models.RoadBike;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -16,7 +15,7 @@ public class RoadBikeTest {
             RoadBike roadBike = new RoadBike();
             BikeRideOne bikeRideOne = new BikeRideOne(roadBike);
             bikeRideOne.ride();
-            assertEquals(bikeRideOne.getcurrent(), 36);
+            assertEquals(bikeRideOne.currentSpeed(), 36);
         }
 
     @Test
@@ -24,7 +23,7 @@ public class RoadBikeTest {
         RoadBike roadBike = new RoadBike();
         BikeRideTwo bikeRideTwo = new BikeRideTwo(roadBike);
         bikeRideTwo.ride();
-        assertEquals(bikeRideTwo.getcurrent(), 62);
+        assertEquals(bikeRideTwo.currentSpeed(), 62);
     }
 
     @Test
@@ -32,7 +31,7 @@ public class RoadBikeTest {
         RoadBike roadBike = new RoadBike();
         BikeRideThree bikeRideThree = new BikeRideThree(roadBike);
         bikeRideThree.ride();
-        assertEquals(bikeRideThree.getcurrent(), 65);
+        assertEquals(bikeRideThree.currentSpeed(), 65);
     }
 
     @Test
@@ -40,7 +39,7 @@ public class RoadBikeTest {
         RoadBike roadBike = new RoadBike();
         BikeRideThree bikeRideThree = new BikeRideThree(roadBike);
         bikeRideThree.ride();
-        assertEquals(bikeRideThree.getcurrent(), 65);
+        assertEquals(bikeRideThree.currentSpeed(), 65);
     }
 
 

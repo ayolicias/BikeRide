@@ -20,7 +20,7 @@ public class Tandem extends BicycleBase {
 
     @Override
     public BicycleType getBicycleType( ) {
-        return null;
+        return this.getBicycleType();
     }
 }
 

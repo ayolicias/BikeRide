@@ -18,9 +18,22 @@ public class BikeRideTwo implements BikeRide {
         this.bicycle.accelerate();
         this.bicycle.accelerate();
         this.bicycle.accelerate();
+        this.bicycle.accelerate();
+        this.bicycle.accelerate();
+        this.bicycle.accelerate();
+        this.bicycle.brake();
+        this.bicycle.brake();
+        this.bicycle.brake();
+        this.bicycle.accelerate();
+        this.bicycle.accelerate();
+        this.bicycle.accelerate();
+
+
     }
 
-    public int getcurrent(){
+
+
+    public int currentSpeed(){
         return this.bicycle.currentSpeed();
     }
 }

@@ -2,15 +2,15 @@ package bicycles;
 
 public interface Bicycle {
 
-    void accelerate( );
+        void accelerate( );
 
-    void brake( );
+        void brake( );
 
-    int currentSpeed( );
+        int currentSpeed( );
 
-    void stop( );
+        void stop( );
 
-    BicycleType getBicycleType( );
+        BicycleType getBicycleType( );
 
-}
+    }
 

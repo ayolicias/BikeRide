@@ -2,11 +2,14 @@ package bicycles.ride;
 
 import bicycles.Bicycle;
 
-public class BikeRideThree implements BikeRide {
-    private final bicycles.Bicycle bicycle;
+//package bicycles.Bicycle.;
 
-    public BikeRideThree(Bicycle bicycle)
-    {
+public class BikeRideThree implements BikeRide {
+
+
+    private final Bicycle bicycle;
+
+    public BikeRideThree(Bicycle bicycle ) {
         this.bicycle = bicycle;
     }
 
@@ -21,9 +24,19 @@ public class BikeRideThree implements BikeRide {
         this.bicycle.accelerate();
         this.bicycle.accelerate();
         this.bicycle.accelerate();
+        this.bicycle.brake();
+        this.bicycle.brake();
+        this.bicycle.accelerate();
+        this.bicycle.accelerate();
+        this.bicycle.accelerate();
+        this.bicycle.accelerate();
     }
 
-    public int getcurrent(){
+
+
+    public int currentSpeed(){
         return this.bicycle.currentSpeed();
     }
+
+
 }

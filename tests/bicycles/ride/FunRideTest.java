@@ -75,11 +75,11 @@ public class FunRideTest {
 
 
         System.out.println(("Display Number Of RoadBikes "));
-        System.out.println(fun.getCountForType(BicycleType.RoadBike));
+        System.out.println(FunRide.getCountForType(BicycleType.RoadBike));
         System.out.println(("Display Number of MountainBikes "));
-        System.out.println(fun.getCountForType(BicycleType.MountainBike));
+        System.out.println(FunRide.getCountForType(BicycleType.MountainBike));
         System.out.println(("Display Number of TandemBikes "));
-        System.out.println(fun.getCountForType(BicycleType.Tandem));
+        System.out.println(FunRide.getCountForType(BicycleType.Tandem));
 
 
     }

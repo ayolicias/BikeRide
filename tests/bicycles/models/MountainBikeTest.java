@@ -17,7 +17,6 @@ public class MountainBikeTest {
         assertEquals(bikeRideOne.currentSpeed(), 14);
     }
 
-
     @Test
     public void ShouldAbleToAccelerateMore( ) {
         MountainBike mountainBike = new MountainBike();
@@ -33,6 +32,4 @@ public class MountainBikeTest {
         bikeRideThree.ride();
         assertEquals(bikeRideThree.currentSpeed(), 26);
     }
-
-
 }

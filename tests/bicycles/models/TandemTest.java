@@ -35,7 +35,6 @@ public  class TandemTest {
         assertEquals(bikeRideThree.currentSpeed(), 63);
     }
 
-
 }
 
 

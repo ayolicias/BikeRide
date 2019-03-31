@@ -31,8 +31,6 @@ public class BikeRideTwo implements BikeRide {
 
     }
 
-
-
     public int currentSpeed(){
         return this.bicycle.currentSpeed();
     }

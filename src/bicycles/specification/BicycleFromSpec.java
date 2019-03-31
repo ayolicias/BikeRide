@@ -22,13 +22,7 @@ public class BicycleFromSpec extends BicycleBase {
 
     @Override
     public BicycleType getBicycleType( ) {
-       // System.out.println(this.bicycleSpecification.getBicycleType());
         return this.getBicycleType(this.bicycleSpecification.getBicycleType());
     }
-
-//    @Override
-//    public int getCountForType() {
-//        return this.getCountForType();
-//    }
 
 }

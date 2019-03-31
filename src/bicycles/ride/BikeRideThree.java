@@ -2,10 +2,7 @@ package bicycles.ride;
 
 import bicycles.Bicycle;
 
-//package bicycles.Bicycle.;
-
 public class BikeRideThree implements BikeRide {
-
 
     private final Bicycle bicycle;
 

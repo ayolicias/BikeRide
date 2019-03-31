@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9fa3acd-d96f-4952-b8e3-8ac2e1da2717" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/bicycles/ride/BikeRideOneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/bicycles/ride/BikeRideThreeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/bicycles/ride/BikeRideTwoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/bicycles/ride/FunRideTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/bicycles/specification/TandemSpecTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BikeRide.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BikeRide.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/Bicycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/Bicycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/models/MountainBike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/models/MountainBike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/models/RoadBike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/models/RoadBike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/models/Tandem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/models/Tandem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/ride/BikeRide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/ride/BikeRide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/ride/BikeRideFour.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/ride/BikeRideOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/ride/BikeRideOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/ride/BikeRideThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/ride/BikeRideThree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/ride/BikeRideTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/ride/BikeRideTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/ride/FunRide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/ride/FunRide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/specification/BicycleFromSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/specification/BicycleFromSpec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bicycles/specification/BicycleSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bicycles/specification/BicycleSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/bicycles/BicycleTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/bicycles/BicycleTypeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/models/MountainBikeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/bicycles/models/MountainBikeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/models/RoadBikeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/bicycles/models/RoadBikeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/models/TandemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/bicycles/models/TandemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ride/FunRideTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/specification/MountainSpecTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/bicycles/specification/MountainSpecTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/specification/RoadBikeSpecTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/bicycles/specification/RoadBikeSpecTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="d9fa3acd-d96f-4952-b8e3-8ac2e1da2717" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/bicycles/ride/FunRideTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="364">
+              <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -259,65 +231,6 @@
               <item name="BikeRide" type="b2602c69:ProjectViewProjectNode" />
               <item name="BikeRide" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRide" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bicycles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRide" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bicycles" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRide" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bicycles" type="462c0819:PsiDirectoryNode" />
-              <item name="ride" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRide" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bicycles" type="462c0819:PsiDirectoryNode" />
-              <item name="specification" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRide" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRide" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="bicycles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRide" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="bicycles" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRide" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="bicycles" type="462c0819:PsiDirectoryNode" />
-              <item name="ride" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRide" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="bicycles" type="462c0819:PsiDirectoryNode" />
-              <item name="specification" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -525,9 +438,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21787709" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21787709" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -537,12 +449,12 @@
       <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.32943144" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.13843648" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3436482" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3436482" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.34527686" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32943144" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3664495" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.11563518" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32943144" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.25407165" />
@@ -949,8 +861,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/bicycles/ride/FunRideTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="364">
+          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

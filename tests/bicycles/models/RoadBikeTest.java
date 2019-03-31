@@ -12,10 +12,10 @@ public class RoadBikeTest {
 
     @Test
     public void ShouldBeAbleToAccelerateLess( ) {
-            RoadBike roadBike = new RoadBike();
-            BikeRideOne bikeRideOne = new BikeRideOne(roadBike);
-            bikeRideOne.ride();
-            assertEquals(bikeRideOne.currentSpeed(), 36);
+        RoadBike roadBike = new RoadBike();
+        BikeRideOne bikeRideOne = new BikeRideOne(roadBike);
+        bikeRideOne.ride();
+        assertEquals(bikeRideOne.currentSpeed(), 36);
         }
 
     @Test
@@ -41,8 +41,6 @@ public class RoadBikeTest {
         bikeRideThree.ride();
         assertEquals(bikeRideThree.currentSpeed(), 65);
     }
-
-
 
 }
 

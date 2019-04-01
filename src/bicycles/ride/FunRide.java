@@ -18,19 +18,19 @@ public class FunRide {
     private static List<Bicycle> bikes = new ArrayList<>();
 
 
-    public static void accept(Bicycle bicycle) {
+    public static String accept(Bicycle bicycle) {
 
 
         if (!bikes.contains(bicycle) && maximum > bikes.size()) {
             bikes.add(bicycle);
 
-            System.out.println("Accept");
-//            return "accept";
+//            System.out.println("Accept");
+            return "reject";
 
         } else if (maximum <= bikes.size()) {
-            System.out.println("reject");
+//            System.out.println("reject");
         }
-//        return "reject";
+        return "accept";
 
     }
 
@@ -45,6 +45,8 @@ public class FunRide {
         }
         return funCount;
     }
+
+
 }
 
 

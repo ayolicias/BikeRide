@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BikeRideThreeTest {
     @Test
+
     public void ReturnRoadBikeCurrentSpeedInBikeRideThree(){
         RoadBike bicycles = new RoadBike();
         BikeRideThree bikeRide = new bicycles.ride.BikeRideThree(bicycles);

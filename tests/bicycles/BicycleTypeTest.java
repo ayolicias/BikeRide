@@ -1,8 +1,5 @@
 package bicycles;
 
-import bicycles.ride.BikeRideOne;
-import bicycles.ride.BikeRideThree;
-import bicycles.ride.BikeRideTwo;
 import bicycles.specification.BicycleFromSpec;
 import bicycles.specification.BicycleSpecification;
 import org.junit.jupiter.api.Test;
@@ -14,32 +11,34 @@ public class BicycleTypeTest {
 
     public void ShouldGetTandemType(){
 
-        BicycleSpecification roadBikeSpec = new BicycleSpecification(12, -7, BicycleType.Tandem);
-        Bicycle bicycle = new BicycleFromSpec(roadBikeSpec);
-        BikeRideTwo bikeRideTwo = new BikeRideTwo(bicycle);
-        bikeRideTwo.ride();
-        assertEquals(bikeRideTwo.currentSpeed(), 72);
+        BicycleSpecification tandemSpec = new BicycleSpecification(12, -7, BicycleType.Tandem);
+        Bicycle bicycle = new BicycleFromSpec(tandemSpec);
+
+        assertEquals(tandemSpec.getAccelerationSpeed(),12);
+        assertEquals(tandemSpec.getBrakeSpeed(),-7);
 
     }
+
     @Test
 
     public void ShouldGetMountainType(){
 
         BicycleSpecification mountainBikeSpec = new BicycleSpecification(5, -4, BicycleType.MountainBike);
         Bicycle bicycle = new BicycleFromSpec(mountainBikeSpec);
-        BikeRideOne bikeRideOne = new BikeRideOne(bicycle);
-        bikeRideOne.ride();
-        assertEquals(bikeRideOne.currentSpeed(), 20);
+
+       assertEquals(mountainBikeSpec.getAccelerationSpeed(),5);
+       assertEquals(mountainBikeSpec.getBrakeSpeed(),-4);
+
 
     }
     @Test
     public void ShouldGetRoadType(){
 
-        BicycleSpecification roadBikeSpec = new BicycleSpecification(11, -3, BicycleType.MountainBike);
+        BicycleSpecification roadBikeSpec = new BicycleSpecification(11, -3, BicycleType.RoadBike);
         Bicycle bicycle = new BicycleFromSpec(roadBikeSpec);
-        BikeRideThree bikeRideThree = new BikeRideThree(bicycle);
-        bikeRideThree.ride();
-        assertEquals(bikeRideThree.currentSpeed(), 77);
+
+        assertEquals(roadBikeSpec.getAccelerationSpeed(),11);
+        assertEquals(roadBikeSpec.getBrakeSpeed(),-3);
 
     }
 }

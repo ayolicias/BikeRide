@@ -6,6 +6,8 @@ import bicycles.ride.BikeRide;
 import bicycles.ride.BikeRideOne;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class MountainSpecTest {
     @Test
 
@@ -16,13 +18,13 @@ public class MountainSpecTest {
         mBikeRide.ride ( );
 
         System.out.println ( "Should ReturncurrentSpeed for mountainBike:" );
-        System.out.println(mBikeRide.currentSpeed());
+        assertEquals(mBikeRide.currentSpeed(),20);
 
         System.out.println ( "Should getaccelerationSpeed for MountainBike:" );
-        System.out.println(mountainBikeSpec.getAccelerationSpeed());
+        assertEquals(mountainBikeSpec.getAccelerationSpeed(),5);
 
         System.out.println ( "Should getbrakeSpeed for mountainBike:" );
-        System.out.println(mountainBikeSpec.getBrakeSpeed());
+        assertEquals(mountainBikeSpec.getBrakeSpeed(),-3);
 
     }
 }

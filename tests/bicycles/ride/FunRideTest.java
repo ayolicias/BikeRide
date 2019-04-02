@@ -12,39 +12,56 @@ public class FunRideTest {
 
 
     @Test
-    public void shouldgetCountForBikeType() {
-        FunRide fun = new FunRide(1);
-        BicycleSpecification RoadSpec = new BicycleSpecification(11, 3, RoadBike);
-        Bicycle roadBike = new BicycleFromSpec(RoadSpec);
+    public void shouldGetCountForBikeType() {
 
-        fun.accept(roadBike);
+        FunRide funRide = new FunRide(5);
 
-        assertEquals(fun.getCountForType(RoadBike), 1);
+        BicycleSpecification roadSpec = new BicycleSpecification(11, 3, RoadBike);
+
+        Bicycle roadBike1 = new BicycleFromSpec(roadSpec);
+        Bicycle roadBike2 = new BicycleFromSpec(roadSpec);
+        Bicycle roadBike3 = new BicycleFromSpec(roadSpec);
+
+        assertEquals("accept", funRide.accept(roadBike1));
+        assertEquals("accept", funRide.accept(roadBike2));
+        assertEquals("accept", funRide.accept(roadBike3));
+
+        assertEquals(funRide.getCountForType(RoadBike), 3);
 
     }
 
     @Test
 
-    public void shouldacceptBike() {
+    public void shouldAcceptBikesIfThereIsStillSpaceInTheFunRide() {
         BicycleSpecification RoadSpec = new BicycleSpecification(11, 3, RoadBike);
         Bicycle roadBike = new BicycleFromSpec(RoadSpec);
         BicycleSpecification MountainSpec = new BicycleSpecification(5, 4, MountainBike);
         Bicycle mountainBike = new BicycleFromSpec(MountainSpec);
 
-        FunRide fun = new FunRide(3);
+        FunRide funRide = new FunRide(3);
 
-        fun.accept(roadBike);
-        fun.accept(mountainBike);
-
-        assertEquals(fun.accept(mountainBike),"accept");
-
-        assertEquals(fun.accept(roadBike),"accept");
+        assertEquals(funRide.accept(mountainBike),"accept");
+        assertEquals(funRide.accept(roadBike),"accept");
 
     }
 
     @Test
+    public void shouldNotAcceptBikeAlreadyAcceptedForFunRide() {
 
-    public void shouldReturnacceptedTypesOfBikes() {
+        BicycleSpecification TandemSpec = new BicycleSpecification(12, 7, Tandem);
+        BicycleSpecification RoadSpec = new BicycleSpecification(11, 3, RoadBike);
+        BicycleSpecification MountainSpec = new BicycleSpecification(5, 4, MountainBike);
+        Bicycle mountainBike = new BicycleFromSpec(MountainSpec);
+
+        FunRide funRide = new FunRide(3);
+
+        assertEquals(funRide.accept(mountainBike),"accept");
+        assertEquals(funRide.accept(mountainBike),"reject");
+
+    }
+
+    @Test
+    public void shouldReturnRejectedIfAlreadyReachedMaxBikeCountForFunRide() {
 
         BicycleSpecification TandemSpec = new BicycleSpecification(12, 7, Tandem);
         Bicycle tandemBike = new BicycleFromSpec(TandemSpec);
@@ -53,46 +70,11 @@ public class FunRideTest {
         BicycleSpecification MountainSpec = new BicycleSpecification(5, 4, MountainBike);
         Bicycle mountainBike = new BicycleFromSpec(MountainSpec);
 
-        FunRide fun = new FunRide(3);
+        FunRide funRide = new FunRide(2);
 
-        fun.accept(tandemBike);
-        fun.accept(roadBike);
-        fun.accept(mountainBike);
-        fun.accept(mountainBike);
-
-        assertEquals(roadBike.getBicycleType(),RoadBike);
-
-        assertEquals(mountainBike.getBicycleType(), MountainBike);
-
-        assertEquals(tandemBike.getBicycleType(),Tandem);
-
-    }
-
-    @Test
-    public void shouldReturnrejectedTypesOfBikes() {
-
-        BicycleSpecification TandemSpec = new BicycleSpecification(12, 7, Tandem);
-        Bicycle tandemBike = new BicycleFromSpec(TandemSpec);
-        BicycleSpecification RoadSpec = new BicycleSpecification(11, 3, RoadBike);
-        Bicycle roadBike = new BicycleFromSpec(RoadSpec);
-        BicycleSpecification MountainSpec = new BicycleSpecification(5, 4, MountainBike);
-        Bicycle mountainBike = new BicycleFromSpec(MountainSpec);
-
-        FunRide fun = new FunRide(2);
-
-        fun.accept(tandemBike);
-        fun.accept(roadBike);
-        fun.accept(mountainBike);
-
-        assertEquals(roadBike.getBicycleType(),RoadBike);
-        assertEquals(tandemBike.getBicycleType(),Tandem);
-        assertEquals(mountainBike.getBicycleType(),MountainBike);
-
+        assertEquals("accept", funRide.accept(tandemBike));
+        assertEquals("accept", funRide.accept(roadBike));
+        assertEquals("reject", funRide.accept(mountainBike));
 
     }
 }
-
-
-
-
-

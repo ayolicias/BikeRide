@@ -8,7 +8,7 @@ import java.util.List;
 
 public class FunRide {
 
-    static int maximum = 0;
+    private int maximum = 0;
 
     public FunRide(int maximum) {
         this.maximum = maximum;
@@ -20,13 +20,11 @@ public class FunRide {
 
     public  String accept( Bicycle bicycle ) {
 
-        if (!bikes.contains(bicycle) && maximum > bikes.size()) {
+        if (!bikes.contains(bicycle) && bikes.size() < maximum ) {
             bikes.add(bicycle);
-            return "reject";
-
-        } else if (maximum <= bikes.size()) {
+            return "accept";
         }
-        return "accept";
+        return "reject";
     }
 
 

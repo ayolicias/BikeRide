@@ -8,7 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TandemSpecTest {
 
-
     @Test
     public void TandemSpec(){
         bicycles.specification.BicycleSpecification tandemBikeSpec = new bicycles.specification.BicycleSpecification ( 12, -7, BicycleType.Tandem );

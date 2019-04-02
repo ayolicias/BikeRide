@@ -61,13 +61,11 @@ public class FunRideTest {
         FunRide.accept(mountainBike);
         FunRide.accept(mountainBike);
 
-        System.out.println(("Display RoadBike "));
         assertEquals(roadBike.getBicycleType(),RoadBike);
-        System.out.println(("Display MountainBike "));
-        assertEquals(mountainBike.getBicycleType(), MountainBike);
-        System.out.println(("Display Tandem "));
-        assertEquals(tandemBike.getBicycleType(),Tandem);
 
+        assertEquals(mountainBike.getBicycleType(), MountainBike);
+
+        assertEquals(tandemBike.getBicycleType(),Tandem);
 
     }
 }

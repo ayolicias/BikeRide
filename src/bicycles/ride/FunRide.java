@@ -20,18 +20,13 @@ public class FunRide {
 
     public static String accept(Bicycle bicycle) {
 
-
         if (!bikes.contains(bicycle) && maximum > bikes.size()) {
             bikes.add(bicycle);
-
-//            System.out.println("Accept");
             return "reject";
 
         } else if (maximum <= bikes.size()) {
-//            System.out.println("reject");
         }
         return "accept";
-
     }
 
 
@@ -49,12 +44,6 @@ public class FunRide {
 
 }
 
-
-
-//    public int getEnteredCount(){
-//        return bikes.size();
-//    }
-//}
 
 
 

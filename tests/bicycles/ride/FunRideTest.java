@@ -12,7 +12,7 @@ public class FunRideTest {
 
 
     @Test
-    public void ShouldGetCountForBikeType() {
+    public void shouldgetCountForBikeType() {
         FunRide fun = new FunRide(1);
         BicycleSpecification RoadSpec = new BicycleSpecification(11, 3, RoadBike);
         Bicycle roadBike = new BicycleFromSpec(RoadSpec);
@@ -25,7 +25,7 @@ public class FunRideTest {
 
     @Test
 
-    public void ShouldAcceptBike() {
+    public void shouldacceptBike() {
         BicycleSpecification RoadSpec = new BicycleSpecification(11, 3, RoadBike);
         Bicycle roadBike = new BicycleFromSpec(RoadSpec);
         BicycleSpecification MountainSpec = new BicycleSpecification(5, 4, MountainBike);
@@ -36,15 +36,15 @@ public class FunRideTest {
         fun.accept(roadBike);
         fun.accept(mountainBike);
 
-        assertEquals(FunRide.accept(mountainBike),"accept");
+        assertEquals(fun.accept(mountainBike),"accept");
 
-        assertEquals(FunRide.accept(roadBike),"accept");
+        assertEquals(fun.accept(roadBike),"accept");
 
     }
 
     @Test
 
-    public void ShouldReturnAcceptedTypesOfBikes() {
+    public void shouldReturnacceptedTypesOfBikes() {
 
         BicycleSpecification TandemSpec = new BicycleSpecification(12, 7, Tandem);
         Bicycle tandemBike = new BicycleFromSpec(TandemSpec);
@@ -55,10 +55,10 @@ public class FunRideTest {
 
         FunRide fun = new FunRide(3);
 
-        FunRide.accept(tandemBike);
-        FunRide.accept(roadBike);
-        FunRide.accept(mountainBike);
-        FunRide.accept(mountainBike);
+        fun.accept(tandemBike);
+        fun.accept(roadBike);
+        fun.accept(mountainBike);
+        fun.accept(mountainBike);
 
         assertEquals(roadBike.getBicycleType(),RoadBike);
 
@@ -69,7 +69,7 @@ public class FunRideTest {
     }
 
     @Test
-    public void ShouldReturnRejectedTypesOfBikes() {
+    public void shouldReturnrejectedTypesOfBikes() {
 
         BicycleSpecification TandemSpec = new BicycleSpecification(12, 7, Tandem);
         Bicycle tandemBike = new BicycleFromSpec(TandemSpec);
@@ -80,9 +80,9 @@ public class FunRideTest {
 
         FunRide fun = new FunRide(2);
 
-        FunRide.accept(tandemBike);
-        FunRide.accept(roadBike);
-        FunRide.accept(mountainBike);
+        fun.accept(tandemBike);
+        fun.accept(roadBike);
+        fun.accept(mountainBike);
 
         assertEquals(roadBike.getBicycleType(),RoadBike);
         assertEquals(tandemBike.getBicycleType(),Tandem);

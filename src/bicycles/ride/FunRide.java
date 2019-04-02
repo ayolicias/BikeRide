@@ -15,10 +15,10 @@ public class FunRide {
     }
 
 
-    private static List<Bicycle> bikes = new ArrayList<>();
+    private  List<Bicycle> bikes = new ArrayList<>();
 
 
-    public static String accept(Bicycle bicycle) {
+    public  String accept( Bicycle bicycle ) {
 
         if (!bikes.contains(bicycle) && maximum > bikes.size()) {
             bikes.add(bicycle);
@@ -30,7 +30,7 @@ public class FunRide {
     }
 
 
-    public static int getCountForType(BicycleType bicycleType) {
+    public  int getCountForType(BicycleType bicycleType) {
         int funCount = 0;
 
         for (Bicycle type : bikes) {
